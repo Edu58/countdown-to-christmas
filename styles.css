@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background-color: purple;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.countdown .time {
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.countdown .time .christmas {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.countdown .time .count {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.countdown .time .count .text {
+  font-size: 2.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.countdown .time .count .num {
+  font-size: 2rem;
+}
+
+.countdown .time .santa img {
+  height: 25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown .time .christmas {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .countdown .time .count .text {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .countdown .time .count .num {
+    font-size: 1.5rem;
+  }
+
+  .countdown .time .santa img {
+    height: 20rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .countdown .time .christmas {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .countdown .time .count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .countdown .time .count .detail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+  }
+
+  .countdown .time .count .text {
+      margin-right: 4rem;
+  }
+
+  .countdown .time .santa img {
+    height: 15rem;
+    width: 100%;
+  }
+}
